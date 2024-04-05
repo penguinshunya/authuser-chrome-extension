@@ -11,7 +11,7 @@ chrome.tabs.onCreated.addListener(function (tab) {
   if (!url.host.endsWith("cloud.google.com")) return;
 
   chrome.storage.local.get([KEY], function (result) {
-    const authuser = result[KEY];
+    const authuser = result[KEY] || "0";
     url.searchParams.append("authuser", authuser);
     chrome.tabs.update(tab.id, { url: url.toString() });
   });
