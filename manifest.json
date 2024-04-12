@@ -1,7 +1,7 @@
 {
-  "name": "authuser",
-  "description": "add authuser parameter",
-  "version": "1.0.0",
+  "name": "External AutoLogin GCP",
+  "description": "Automatically logs into Google when clicking a GCP URL from external apps.",
+  "version": "1.0.1",
   "manifest_version": 3,
   "permissions": ["storage", "tabs"],
   "background": {
